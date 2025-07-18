@@ -1,0 +1,6 @@
+const snake_and_food = document.querySelector(".snake_and_food")
+const rock_paper_scissors = document.querySelector(".rock_paper_scissors")
+const tic_tac_toe = document.querySelector(".tic_tac_toe")
+const word_puzzle = document.querySelector(".word_puzzle")
+const memory_game = document.querySelector(".memory_game")
+const chess_game = document.querySelector(".chess_game")

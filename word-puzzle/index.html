@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="wordpuzzle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Word Puzzle Game</h1>
+        <div class="game-container">
+        <p id="scrambled-word"></p>
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Check Guess</button>
+        <p id="result-message"></p>
+    </div>
+    <button onclick="resetGame()">New Puzzle</button>
+    </div>
+    <script src="wordpuzzle.js"></script>
+</body>
+</html>

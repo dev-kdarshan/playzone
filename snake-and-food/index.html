@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <p id="score">Score: 0</p>
+    <div class="controls">
+    <div class="row">
+        <button class="control-btn" onclick="setDirection('up')">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+        </button>
+    </div>
+    <div class="row">
+        <button class="control-btn" onclick="setDirection('left')">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        </button>
+        <button class="control-btn" onclick="setDirection('down')">
+        <i class="bi bi-arrow-down-circle-fill"></i>
+        </button>
+        <button class="control-btn" onclick="setDirection('right')">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+    </div>
+    </div>
+    <button onclick="resetGame()">Restart Game</button>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>

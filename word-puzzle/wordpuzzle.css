@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url(bg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgba(238, 234, 234, 0.8);
+    text-shadow: 2px 2px 3px rgba(14, 14, 14, 0.1);
+}
+
+.game-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 100px rgb(31, 31, 31);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+#scrambled-word {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+#result-message {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .game-container{
+        width: 80%;
+    }
+}

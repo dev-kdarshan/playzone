@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let's play games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- playzone a gaming web application by Darshan Khute!! -->
+     <!-- for more information visit my site at https://portfolio-darshankhute.netlify.app/ -->
+  <div id="loader-wrapper">
+    <div class="loader-animation">
+      <span>P</span><span>L</span><span>A</span><span>Y</span><span>Z</span><span>O</span><span>N</span><span>E</span>
+    </div>
+  </div>
+
+  <div class="wrapper" style="display: none;">
+    <header class="title"><h1>playzone</h1></header>
+    <div class="games-container">
+      <div class="row">
+        <div class="game"><a href="./snake-and-food/index.html">Snake & Food</a></div>
+        <div class="game"><a href="./rock-paper-scissors/index.html">Rock Paper Scissors</a></div>
+      </div>
+      <div class="row">
+        <div class="game"><a href="./tic-tac-toe/index.html">Tic Tac Toe</a></div>
+        <div class="game"><a href="./word-puzzle/index.html">Word Puzzle</a></div>
+      </div>
+      <div class="row">
+        <div class="game"><a href="./memory-game/index.html">Memory Game</a></div>
+        <div class="game"><a href="./snake-and-ladder/index.html">Snake Ladder</a></div>
+      </div>
+    </div>
+    <div class="copyright"><p>©2024 Playzone. All Rights Reserved.</p></div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader-wrapper");
+      const wrapper = document.querySelector(".wrapper");
+      const hasVisited = sessionStorage.getItem("visited");
+
+      if (!hasVisited) {
+        // First time visiting 
+        sessionStorage.setItem("visited", "true");
+        setTimeout(() => {
+          loader.classList.add("hidden");
+          setTimeout(() => {
+            loader.style.display = "none";
+            wrapper.style.display = "flex";
+          }, 400);
+        }, 2500); 
+      } else {
+        // Skip loader
+        loader.style.display = "none";
+        wrapper.style.display = "flex";
+      }
+    });
+  </script>
+</body>
+
+</html>
