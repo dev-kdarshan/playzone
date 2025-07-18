@@ -22,9 +22,6 @@ Playzone is a responsive web application that brings together a collection of cl
 - JavaScript  
 - Responsive Web Design
 
-## Project Structure
-
-
 ## How to Use
 
 1. Open the `index.html` file in any modern web browser.
