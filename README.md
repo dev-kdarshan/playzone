@@ -28,9 +28,6 @@ Playzone is a responsive web application that brings together a collection of cl
 2. Select a game from the homepage.
 3. Start playing and enjoy.
 
-## Screenshots
-
-*(Insert relevant screenshots of the homepage and games here.)*
 
 ## Author
 
